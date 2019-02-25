@@ -3,7 +3,7 @@ const client = new Discord.Client();
  
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-   client.user.setActivity("(-br)",{type: 'WATCHING'})
+   client.user.setActivity("(+bc)",{type: 'WATCHING'})
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -32,7 +32,7 @@ client.on('ready', () => {
 
     let args = message.content.split(' ').slice(1).join(' ');
      if(!message.channel.guild) return;
-if(message.content.split(' ')[0] == '-bc') {
+if(message.content.split(' ')[0] == '+bc') {
          message.react("??")
           let embed = new Discord.RichEmbed()
     .setColor("#FF00FF")
